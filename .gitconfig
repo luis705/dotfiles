@@ -1,0 +1,9 @@
+[user]
+	name = Luís Otávio Lopes Amorim
+	email = luisotaviolamorim@gmail.com
+
+[color]
+	ui = true
+
+[push]
+	default = simple

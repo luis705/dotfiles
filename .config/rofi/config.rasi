@@ -1,0 +1,5 @@
+configuration {
+ combi-modi: "window,drun,run,combi";
+ theme: "gruvbox-dark-hard";
+ font: "hack 10";
+  }
