@@ -21,5 +21,4 @@ cp ../wallpapers ~/
 
 
 # Utilitarios
-cp -r ../Utils ~/
 cp xfce4-sccreenshoter ~/

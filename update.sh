@@ -15,8 +15,6 @@ cp -r ~/.config/i3 .config/
 cp -r ~/.config/rofi .config/
 cp -r ~/.config/terminator .config/
 
-# Utils
-cp  ~/Utils/* ./Utils/
 
 # Wallpapers
 cp -r ~/wallpapers ./
