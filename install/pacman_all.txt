@@ -6,7 +6,6 @@ alsa-utils
 android-tools
 android-udev
 apparmor
-arduino
 audacious
 autoconf
 automake
@@ -17,11 +16,9 @@ bash-completion
 bashtop
 binutils
 bison
-blueman
 boost
 btrfs-progs
 bzip2
-catfish
 chromium
 cmake
 coreutils
@@ -53,6 +50,7 @@ filesystem
 findutils
 flex
 fortune-mod
+fzf
 galculator-gtk2
 garcon
 gawk
@@ -85,7 +83,6 @@ gvfs-nfs
 gvfs-smb
 gzip
 haveged
-hexchat
 htop
 i3-gaps
 i3status
@@ -104,7 +101,6 @@ jre8-openjdk
 jre8-openjdk-headless
 jxrlib
 kernel-alive
-konsole
 less
 lib32-libva-intel-driver
 lib32-libva-mesa-driver
@@ -164,6 +160,7 @@ mkinitcpio-openswap
 mlocate
 mobile-broadband-provider-info
 modemmanager
+morc_menu
 mousepad
 mtpfs
 mugshot
@@ -200,7 +197,6 @@ pavucontrol
 pciutils
 perl
 perl-file-mimeinfo
-pidgin
 pkgconf
 poppler-data
 poppler-glib
@@ -220,11 +216,13 @@ rsync
 s-nail
 samba
 screenfetch
+scrot
 sed
 shadow
 snapd
 snapd-glib
 spectre-meltdown-checker
+speedtest-cli
 steam-manjaro
 sudo
 sysfsutils
@@ -279,6 +277,7 @@ wallpapers-2018
 wallpapers-juhraya
 wget
 which
+wireless_tools
 wlroots
 wpa_supplicant
 xclip
@@ -320,7 +319,6 @@ xfce4-settings
 xfce4-smartbookmark-plugin
 xfce4-systemload-plugin
 xfce4-taskmanager
-xfce4-terminal
 xfce4-time-out-plugin
 xfce4-timer-plugin
 xfce4-verve-plugin

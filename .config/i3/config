@@ -105,11 +105,21 @@ bindsym $mod+Return exec terminator
 # bindsym $mod+Return exec alacritty
 
 # start program launcher
-# bindsym $mod+d exec --no-startup-id dmenu_recency
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $alt+F2 exec --no-startup-id dmenu_run
-# bindsym $alt+Tab exec --no-startup-id "rofi -combi-modi window,drun,emoji,calc -show combi -modi combi"
-bindsym $alt+Tab exec --no-startup-id "~/.config/rofi/rofimenu.sh"
+
+###### rofi #####
+# Applets
+bindsym $mod+$alt+b exec --no-startup-id ~/.config/rofi/bin/applet_battery
+bindsym $mod+$alt+n exec --no-startup-id ~/.config/rofi/bin/applet_network
+bindsym $mod+$alt+v exec --no-startup-id ~/.config/rofi/bin/applet_volume
+bindsym $mod+Print exec --no-startup-id ~/.config/rofi/bin/applet_screenshot
+
+# Menus
+bindsym $mod+$alt+End exec --no-startup-id ~/.config/rofi/bin/menu_powermenu
+bindsym $mod+$alt+a exec --no-startup-id ~/.config/rofi/bin/menu_apps
+
+# Launchers
+bindsym $alt+Tab exec --no-startup-id ~/.config/rofi/bin/launcher_text
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -123,7 +133,6 @@ bindsym $mod+F5 exec terminal -e 'mocp'
 #bindsym $mod+t exec --no-startup-id pkill compton
 #bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym $mod+Print --release exec --no-startup-id xfce4-screenshooter
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 #bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
@@ -347,23 +356,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# Set shut down, restart and locking features
-bindsym $mod+End mode "$mode_system"
-set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
-mode "$mode_system" {
-    bindsym l exec --no-startup-id lock, mode "default"
-    bindsym s exec --no-startup-id suspend, mode "default"
-    bindsym u exec --no-startup-id switch_user, mode "default"
-    bindsym e exec --no-startup-id logout, mode "default"
-    bindsym h exec --no-startup-id hibernate, mode "default"
-    bindsym r exec --no-startup-id reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id poweroff, mode "default"
 
-    # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-    bindsym $mod+End mode "default"
-}
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"

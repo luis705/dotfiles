@@ -4,16 +4,6 @@ icons = "awesome5"
 
 
 [[block]]
-block = "uptime"
-
-
-[[block]]
-block = "net"
-use_bits = true
-format = "{speed_up} {speed_down}"
-
-
-[[block]]
 block = "memory"
 clickable = false
 warning_mem = 70.0
@@ -37,13 +27,6 @@ block = "pacman"
 interval = 10
 format = "{pacman}"
 hide_when_uptodate = true
-
-
-[[block]]
-block = "temperature"
-interval = 60
-collapsed = true
-format = "Avg:{average}°C Max:{max}°C"
 
 
 [[block]]
