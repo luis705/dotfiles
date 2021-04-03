@@ -3,12 +3,13 @@ icons = "awesome5"
 
 
 
+
 [[block]]
 block = "memory"
 clickable = false
 warning_mem = 70.0
 critical_mem = 80.0
-format_mem = "{MFg}GB/{MTg}GB"
+format_mem = "{Mug}GB/{MTg}GB"
 
 [[block]]
 block = "cpu"

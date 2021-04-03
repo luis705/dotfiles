@@ -21,6 +21,7 @@ btrfs-progs
 bzip2
 chromium
 cmake
+code
 coreutils
 cowsay
 crda
@@ -251,6 +252,7 @@ thunderbird
 timeshift
 tk
 tlp
+traceroute
 tree-sitter
 ttf-dejavu
 ttf-droid

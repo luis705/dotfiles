@@ -140,7 +140,3 @@ ex ()
 
 # Start starship
 eval "$(starship init bash)"
-
-# Cowsay
-fortune | cowsay
-

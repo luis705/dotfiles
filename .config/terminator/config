@@ -1,7 +1,7 @@
 [global_config]
-  borderless = True
   tab_position = bottom
   broadcast_default = off
+  title_at_bottom = True
   enabled_plugins = CustomCommandsMenu,
   title_use_system_font = False
   title_font = Source Code Pro 16
